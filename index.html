@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Portofolio Aditya Herlambang, fresh graduate Rekayasa Perangkat Lunak, web developer dan desainer grafis.">
+
+  <title>Aditya Herlambang — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Anton&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGASI -->
+  <header class="navbar">
+    <a href="#beranda" class="logo">
+      AD<span>.</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Buka navigasi"
+      aria-expanded="false"
+      aria-controls="navMenu">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#beranda" class="nav-link aktif">Beranda</a>
+      <a href="#tentang" class="nav-link">Tentang</a>
+      <a href="#proyek" class="nav-link">Proyek</a>
+      <a href="#software" class="nav-link">Software</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+    </nav>
+
+    <a href="#kontak" class="nav-cta">Hubungi Saya <span>↗</span></a>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="sampul" id="beranda">
+
+      <svg class="coretan coretan-belakang" viewBox="0 0 1000 600"
+        preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path pathLength="1" d="M439.3 256.2 C432.0 238.2 387.7 154.5 399.2 157.5 C410.7 160.4 495.6 281.7 502.7 272.5 C509.8 263.3 435.8 116.2 438.2 106.9 C440.5 97.6 507.2 210.0 515.5 221.6 C523.9 233.2 477.2 174.9 484.1 170.9 C491.0 166.9 536.8 207.6 553.5 199.7 C570.2 191.7 561.4 124.0 575.7 127.3 C590.0 130.6 632.4 227.5 632.3 218.0 C632.2 208.4 564.8 83.7 575.1 74.8 C585.4 65.8 678.9 160.1 689.1 168.8 C699.2 177.5 622.3 124.3 631.1 122.7 C639.8 121.0 725.7 167.1 737.1 159.6 C748.5 152.1 701.5 95.8 693.6 81.6"/>
+        <path pathLength="1" d="M398.7 217.4 C403.0 206.6 409.3 149.8 422.5 157.9 C435.7 165.9 458.3 257.1 471.3 261.5 C484.3 265.9 488.5 182.2 494.1 182.0 C499.6 181.7 496.9 259.3 501.9 260.1 C506.9 261.0 511.1 176.9 521.7 186.7 C532.4 196.5 546.0 311.6 560.3 314.1 C574.7 316.5 591.5 201.3 600.7 200.0 C609.9 198.7 603.9 296.5 610.7 306.8 C617.5 317.1 633.2 265.6 638.2 256.4"/>
+      </svg>
+
+      <h1 class="sampul-judul">
+        <span class="sr-only">Aditya Herlambang — Portfolio</span>
+
+        <svg class="judul-lebar" viewBox="0 0 1000 300" aria-hidden="true" focusable="false">
+          <text x="0" y="288" textLength="1000" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+        </svg>
+
+        <svg class="judul-tumpuk" viewBox="0 0 1000 800" aria-hidden="true" focusable="false">
+          <text x="0" y="380" textLength="860" lengthAdjust="spacingAndGlyphs">PORT</text>
+          <text x="0" y="780" textLength="1000" lengthAdjust="spacingAndGlyphs">FOLIO</text>
+        </svg>
+      </h1>
+
+      <!-- pp.png harus satu folder dengan index.html -->
+      <img class="sampul-foto" src="pp.png"
+        alt="Aditya Herlambang duduk di bangku"
+        width="433" height="576">
+
+      <svg class="coretan coretan-depan" viewBox="0 0 1000 600"
+        preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path pathLength="1" d="M643.5 538.6 C644.2 522.0 635.6 449.6 647.6 447.0 C659.7 444.4 704.1 522.4 709.9 524.4 C715.7 526.4 675.9 458.8 679.3 458.0 C682.7 457.3 720.8 517.7 728.5 520.3 C736.2 523.0 715.8 476.2 721.8 472.4 C727.8 468.6 753.4 500.9 761.6 499.4 C769.8 497.9 753.7 461.9 766.9 464.1 C780.1 466.3 826.1 521.3 834.1 511.4 C842.1 501.5 804.4 411.6 811.2 409.8 C818.0 408.0 866.0 500.4 871.5 501.5 C877.0 502.6 838.0 419.3 841.2 415.9 C844.5 412.4 878.4 483.9 889.5 482.4 C900.6 480.9 900.0 421.1 902.3 407.5"/>
+        <path pathLength="1" d="M620.2 417.3 C621.8 405.2 622.2 347.4 629.1 350.9 C636.0 354.4 648.0 430.7 658.1 436.4 C668.3 442.1 679.1 379.3 685.0 382.2 C691.0 385.0 684.3 447.2 690.9 451.9 C697.5 456.7 710.8 400.3 721.2 408.5 C731.5 416.6 737.9 495.6 747.8 496.9 C757.7 498.1 770.6 430.2 775.7 415.4"/>
+      </svg>
+
+      <p class="sampul-label sl-kiri-atas">Web developer &amp; desain grafis</p>
+      <a class="sampul-label sl-kanan-atas" href="https://github.com/Adit-Arttech"
+        target="_blank" rel="noopener">github.com/Adit-Arttech</a>
+      <p class="sampul-label sl-kiri-bawah">Aditya Herlambang</p>
+      <a class="sampul-label sl-kanan-bawah" href="#proyek">Lihat karya</a>
+
+    </section>
+
+
+    <!-- TENTANG -->
+    <section class="about section-padding" id="tentang">
+
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / TENTANG SAYA</p>
+        <h2>
+          Masih belajar.<br>
+          <span>Terus berkembang.</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-main reveal">
+          <p class="about-lead">
+            Saya percaya bahwa kemampuan berkembang ketika kita
+            berani mencoba, membuat sesuatu, dan belajar dari prosesnya.
+          </p>
+
+          <p class="about-text">
+            Saya merupakan lulusan SMK Bina Informatika Kota Bogor,
+            jurusan Rekayasa Perangkat Lunak, pada Juni 2026.
+            Selama belajar, saya mengembangkan website menggunakan
+            PHP, MySQL, HTML, CSS, dan JavaScript.
+          </p>
+
+          <p class="about-text">
+            Di luar dunia pemrograman, saya juga tertarik pada
+            desain visual, penulisan, dan komunikasi kreatif.
+            Saya ingin terus mengembangkan kemampuan di bidang
+            teknologi dan desain melalui proyek nyata.
+          </p>
+
+          <a href="#kontak" class="text-link">
+            Mari berkolaborasi <span>↗</span>
+          </a>
+        </div>
+
+        <div class="about-side reveal">
+
+          <div class="info-card">
+            <span class="info-index">01</span>
+            <div>
+              <h3>Pendidikan</h3>
+              <p>SMK Bina Informatika Kota Bogor</p>
+              <span>Rekayasa Perangkat Lunak · 2026</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-index">02</span>
+            <div>
+              <h3>Pengalaman</h3>
+              <p>PKL — Kelurahan Pamoyanan</p>
+              <span>Administrasi dan pelayanan</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-index">03</span>
+            <div>
+              <h3>Komunitas</h3>
+              <p>Standup Indo Kota Bogor</p>
+              <span>Penulisan, komunikasi, dan public speaking</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROYEK -->
+    <section class="projects section-padding" id="proyek">
+
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / KARYA PILIHAN</p>
+        <h2>
+          Ide menjadi<br>
+          <span>karya nyata.</span>
+        </h2>
+        <p class="section-description">
+          Kumpulan proyek website dan desain grafis yang saya
+          kerjakan sebagai bagian dari proses belajar dan berkarya.
+        </p>
+      </div>
+
+      <!-- FILTER KATEGORI -->
+      <div class="project-filter reveal" role="group"
+        aria-label="Filter kategori proyek">
+
+        <button class="filter-btn aktif"
+          data-filter="semua" aria-pressed="true">
+          Semua Karya <span>06</span>
+        </button>
+
+        <button class="filter-btn"
+          data-filter="website" aria-pressed="false">
+          Website Development <span>03</span>
+        </button>
+
+        <button class="filter-btn"
+          data-filter="desain" aria-pressed="false">
+          Desain Grafis <span>03</span>
+        </button>
+
+      </div>
+
+
+      <!-- KATEGORI WEBSITE -->
+      <div class="project-category" data-category-group="website">
+
+        <div class="category-heading reveal">
+          <div>
+            <span class="category-number">A — 01</span>
+            <h3>Website Development</h3>
+          </div>
+          <p>Antarmuka, fungsionalitas, dan solusi digital.</p>
+        </div>
+
+        <div class="website-grid">
+
+          <!-- WEBSITE 1 -->
+          <article class="project-card project-featured reveal"
+            data-project-type="website">
+
+            <a href="https://adit-arttech.github.io/resto/"
+              target="_blank" rel="noopener"
+              class="project-image image-resto">
+
+              <img src="resto.webp"
+                alt="Tampilan website promosi restoran"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">WEBSITE / 001</span>
+              <span class="image-arrow">↗</span>
+            </a>
+
+            <div class="project-meta">
+              <span>WEB DEVELOPMENT</span>
+              <span>01 / 03</span>
+            </div>
+
+            <h4>Website Promosi Restoran</h4>
+
+            <p>
+              Website restoran dengan tampilan visual yang menarik,
+              informasi menu, dan akses pemesanan melalui WhatsApp.
+            </p>
+
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a class="project-link"
+              href="https://adit-arttech.github.io/resto/"
+              target="_blank" rel="noopener">
+              Kunjungi Website <span>↗</span>
+            </a>
+          </article>
+
+
+          <!-- WEBSITE 2 -->
+          <article class="project-card reveal"
+            data-project-type="website">
+
+            <a href="https://nolandd12.github.io/Absensi-karyawan/"
+              target="_blank" rel="noopener"
+              class="project-image image-absen">
+
+              <img src="absen.webp"
+                alt="Tampilan proyek absensi karyawan"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">WEB APP / 002</span>
+              <span class="image-arrow">↗</span>
+            </a>
+
+            <div class="project-meta">
+              <span>WEB APPLICATION</span>
+              <span>02 / 03</span>
+            </div>
+
+            <h4>Sistem Absensi Karyawan</h4>
+
+            <p>
+              Proyek antarmuka absensi karyawan untuk pencatatan
+              kehadiran masuk dan pulang.
+            </p>
+
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a class="project-link"
+              href="https://nolandd12.github.io/Absensi-karyawan/"
+              target="_blank" rel="noopener">
+              Lihat Demo <span>↗</span>
+            </a>
+          </article>
+
+
+          <!-- WEBSITE 3 -->
+          <article class="project-card reveal"
+            data-project-type="website">
+
+            <a href="https://github.com/Adit-Arttech"
+              target="_blank" rel="noopener"
+              class="project-image image-parkir">
+
+              <img src="parkir.webp"
+                alt="Tampilan proyek sistem manajemen parkir"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">SYSTEM / 003</span>
+              <span class="image-arrow">↗</span>
+            </a>
+
+            <div class="project-meta">
+              <span>WEB APPLICATION</span>
+              <span>03 / 03</span>
+            </div>
+
+            <h4>Sistem Manajemen Parkir</h4>
+
+            <p>
+              Proyek sistem pencatatan kendaraan, transaksi,
+              dan pengelolaan data parkir.
+            </p>
+
+            <div class="tag-list">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>XAMPP</span>
+            </div>
+
+            <a class="project-link"
+              href="https://github.com/Adit-Arttech"
+              target="_blank" rel="noopener">
+              Lihat GitHub <span>↗</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+
+
+      <!-- KATEGORI DESAIN GRAFIS -->
+      <div class="project-category design-category"
+        data-category-group="desain">
+
+        <div class="category-heading reveal">
+          <div>
+            <span class="category-number">B — 02</span>
+            <h3>Desain Grafis</h3>
+          </div>
+          <p>Eksplorasi warna, komposisi, dan komunikasi visual.</p>
+        </div>
+
+        <div class="design-grid">
+
+          <!-- DESAIN 1 -->
+          <article class="design-card reveal"
+            data-project-type="desain">
+
+            <button class="design-image"
+              data-lightbox="design produk.png"
+              data-lightbox-alt="Desain poster karya Aditya"
+              aria-label="Perbesar desain poster">
+
+              <img src="design produk.png"
+                alt="Desain poster"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">DESIGN / 001</span>
+              <span class="zoom-label">LIHAT KARYA ↗</span>
+            </button>
+
+            <div class="design-info">
+              <span>01 — PRODUK DESIGN</span>
+              <h4>Desain Produk</h4>
+              <p>
+                Eksplorasi tipografi, warna, dan tata letak
+                untuk menyampaikan pesan secara visual.
+              </p>
+            </div>
+          </article>
+
+
+          <!-- DESAIN 2 -->
+          <article class="design-card reveal"
+            data-project-type="desain">
+
+            <button class="design-image"
+              data-lightbox="BAJU 2.0.PNG"
+              data-lightbox-alt="Desain Kaos karya Aditya"
+              aria-label="Perbesar desain media sosial">
+
+              <img src="BAJU 2.0.PNG"
+                alt="Desain KAOS"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">DESIGN </span>
+              <span class="zoom-label">LIHAT KARYA ↗</span>
+            </button>
+
+            <div class="design-info">
+              <span>02 — KAOS </span>
+              <h4>Desain Kaos</h4>
+              <p>
+                Desain kaos dengan fokus pada gambar,
+                keterbacaan, dan konsistensi visual.
+              </p>
+            </div>
+          </article>
+
+           <!-- DESAIN KAOS 3 -->
+          <article class="design-card reveal"
+            data-project-type="desain">
+
+            <button class="design-image"
+              data-lightbox="BAJU.PNG"
+              data-lightbox-alt="Desain Kaos karya Aditya"
+              aria-label="Perbesar desain media sosial">
+
+              <img src="BAJU.PNG"
+                alt="Desain KAOS"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">DESIGN </span>
+              <span class="zoom-label">LIHAT KARYA ↗</span>
+            </button>
+
+            <div class="design-info">
+              <span>03 — KAOS </span>
+              <h4>Desain Kaos 2</h4>
+              <p>
+                Desain kaos dengan fokus pada gambar,
+                keterbacaan, dan konsistensi visual.
+              </p>
+            </div>
+          </article>
+
+
+          <!-- DESAIN 3 -->
+          <article class="design-card reveal"
+            data-project-type="desain">
+
+            <button class="design-image"
+              data-lightbox="ilustrasi.webp"
+              data-lightbox-alt="Karya desain kreatif Aditya"
+              aria-label="Perbesar desain kreatif">
+
+              <img src="ilustrasi.WEBP"
+                alt="Karya desain kreatif"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');">
+
+              <span class="image-placeholder">DESIGN 004</span>
+              <span class="zoom-label">LIHAT KARYA ↗</span>
+            </button>
+
+            <div class="design-info">
+              <span>CREATIVE DESIGN</span>
+              <h4>Eksplorasi Visual</h4>
+              <p>
+                Eksperimen komposisi, ilustrasi, dan elemen grafis
+                untuk mengembangkan karakter visual.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="project-note reveal">
+        <span class="note-mark">+</span>
+        <p>
+          Setiap proyek adalah kesempatan untuk mencoba pendekatan
+          baru, memecahkan masalah, dan terus mengembangkan kemampuan.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- SOFTWARE -->
+    <section class="software section-padding" id="software">
+
+      <div class="section-heading reveal">
+        <p class="eyebrow"> TOOLS & WORKFLOW</p>
+        <h2>
+          Alat untuk<br>
+          <span>mewujudkan ide.</span>
+        </h2>
+        <p class="section-description">
+          Beberapa software dan platform yang saya gunakan
+          dalam proses pengembangan website dan desain.
+        </p>
+      </div>
+
+      <div class="software-grid">
+
+        <article class="software-card reveal">
+          <span class="software-index">01</span>
+          <div class="software-symbol symbol-vscode">VS<img class="icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="" aria-hidden="true" loading="lazy" onload="this.parentElement.classList.add('has-icon')" onerror="this.remove()"></div>
+          <h3>Visual Studio Code</h3>
+          <p>Menulis, mengedit, dan mengelola kode program.</p>
+          <span class="software-type">CODE EDITOR</span>
+        </article>
+
+        <article class="software-card reveal">
+          <span class="software-index">02</span>
+          <div class="software-symbol symbol-canva">C<img class="icon-img" src="data:image/jpeg;base64,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" alt="" aria-hidden="true" loading="lazy" onload="this.parentElement.classList.add('has-icon')" onerror="this.remove()"></div>
+          <h3>Canva</h3>
+          <p>Membuat desain grafis dan materi visual.</p>
+          <span class="software-type">GRAPHIC DESIGN</span>
+        </article>
+
+        <article class="software-card reveal">
+          <span class="software-index">03</span>
+          <div class="software-symbol symbol-github">GH<img class="icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" aria-hidden="true" loading="lazy" onload="this.parentElement.classList.add('has-icon')" onerror="this.remove()"></div>
+          <h3>GitHub</h3>
+          <p>Menyimpan repositori dan mempublikasikan proyek.</p>
+          <span class="software-type">VERSION CONTROL</span>
+        </article>
+
+        <article class="software-card reveal">
+          <span class="software-index">04</span>
+          <div class="software-symbol symbol-php">PHP<img class="icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="" aria-hidden="true" loading="lazy" onload="this.parentElement.classList.add('has-icon')" onerror="this.remove()"></div>
+          <h3>PHP & MySQL</h3>
+          <p>Membangun aplikasi web dan mengelola database.</p>
+          <span class="software-type">WEB DEVELOPMENT</span>
+        </article>
+
+        <article class="software-card reveal">
+          <span class="software-index">05</span>
+          <div class="software-symbol symbol-xampp">X<img class="icon-img" src="https://cdn.simpleicons.org/xampp" alt="" aria-hidden="true" loading="lazy" onload="this.parentElement.classList.add('has-icon')" onerror="this.remove()"></div>
+          <h3>XAMPP</h3>
+          <p>Menjalankan dan menguji aplikasi web secara lokal.</p>
+          <span class="software-type">LOCAL SERVER</span>
+        </article>
+
+        <article class="software-card reveal">
+          <span class="software-index">06</span>
+          <div class="software-symbol symbol-browser">UI<img class="icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" alt="" aria-hidden="true" loading="lazy" onload="this.parentElement.classList.add('has-icon')" onerror="this.remove()"></div>
+          <h3>Browser & DevTools</h3>
+          <p>Menguji tampilan, responsivitas, dan fungsi website.</p>
+          <span class="software-type">TESTING</span>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- KONTAK -->
+    <section class="contact section-padding" id="kontak">
+
+      <div class="contact-decoration"></div>
+
+      <div class="contact-content reveal">
+        <p class="eyebrow"> KONTAK</p>
+
+        <h2>
+          Punya ide?<br>
+          <span>Mari kerjakan.</span>
+        </h2>
+
+        <p class="contact-description">
+          Saya terbuka untuk kesempatan kerja, proyek website,
+          kolaborasi desain, dan kesempatan belajar yang baru.
+        </p>
+
+        <div class="contact-actions">
+          <!-- GANTI dengan email aktif milikmu -->
+          <a href="mailto:adityaherlambang1212@gmail.com"
+            class="button button-primary">
+            <img class="btn-icon btn-icon-light" src="https://cdn.simpleicons.org/gmail" alt="" aria-hidden="true" onerror="this.remove()">
+            Kirim Email <span>↗</span>
+          </a>
+
+          <a href="https://wa.me/6283105716295?text=Halo%20Aditya%2C%20saya%20melihat%20portofolio%20kamu."
+            target="_blank" rel="noopener"
+            class="button button-whatsapp">
+            <img class="btn-icon btn-icon-light" src="https://cdn.simpleicons.org/whatsapp" alt="" aria-hidden="true" onerror="this.remove()">
+            WhatsApp <span>↗</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/aditya-herlambang12"
+            target="_blank" rel="noopener"
+            class="button button-linkedin">
+            <img class="btn-icon btn-icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" aria-hidden="true" onerror="this.remove()">
+            LinkedIn <span>↗</span>
+          </a>
+
+          <a href="https://github.com/Adit-Arttech"
+            target="_blank" rel="noopener"
+            class="button button-light">
+            <img class="btn-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" aria-hidden="true" onerror="this.remove()">
+            GitHub <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-email">
+          <span>EMAIL</span>
+          <button id="copyEmail"
+            data-email="adityaherlambang1212@gmail.com">
+            adityaherlambang1212@gmail.com
+            <span id="copyLabel">SALIN</span>
+          </button>
+        </div>
+
+        <div class="contact-row">
+          <span>WHATSAPP</span>
+          <a href="https://wa.me/6283105716295"
+            target="_blank" rel="noopener">
+            0831-0571-6295
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span>LINKEDIN</span>
+          <a href="https://www.linkedin.com/in/aditya-herlambang12"
+            target="_blank" rel="noopener">
+            linkedin.com/in/aditya-herlambang12
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-side reveal">
+        <span class="contact-big-text">LET'S<br>CREATE.</span>
+        <span class="contact-side-caption"> ADITYA HERLAMBANG  2026</span>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#beranda" class="footer-logo">AD<span>.</span></a>
+
+    <p> @ Aditya Herlambang.</p>
+
+    <a href="#beranda" class="back-top">KEMBALI KE ATAS ↑</a>
+  </footer>
+
+
+  <!-- LIGHTBOX DESAIN -->
+  <div class="lightbox" id="lightbox"
+    role="dialog" aria-modal="true"
+    aria-label="Pratinjau karya desain"
+    aria-hidden="true">
+
+    <button class="lightbox-close"
+      id="lightboxClose" aria-label="Tutup pratinjau">
+      ×
+    </button>
+
+    <img src="" alt="" id="lightboxImage">
+  </div>
+
+
+  <!-- NOTIFIKASI -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
